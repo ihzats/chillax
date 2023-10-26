@@ -23,7 +23,7 @@ function Header() {
                     <div className="text-white text-2xl font-bold font-chillax lg:mx-12">Chill<span className='text-amber-300'>Ax</span></div>
                     <div className="hidden md:flex space-x-8 mx-8 ">
                         <a
-                            href="#"
+                            href="/"
                             className={`text-white font-mono ${activeItem === 'Home' ? 'font-bold' : ''}`}
                             onClick={() => handleItemClick('Home')}
                         >
@@ -37,7 +37,7 @@ function Header() {
                             About
                         </a>
                         <a
-                            href="#"
+                            href="/service"
                             className={`text-white font-mono ${activeItem === 'Services' ? 'font-bold' : ''}`}
                             onClick={() => handleItemClick('Services')}
                         >
@@ -59,9 +59,9 @@ function Header() {
                 </div>
                 <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
                     <ul className="text-white p-4 space-y-2">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/">Services</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>

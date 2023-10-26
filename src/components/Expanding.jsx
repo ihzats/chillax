@@ -11,7 +11,7 @@ export default function Expanding() {
                     <h1 className='text-2xl font-bold font-chillax'>World's leading chain of hotels and homes</h1>
                     <p className='pt-2 text-gray-400'>More Destinations. More Ease. More Affordable.</p>
 
-                    <div className=' flex pt-10 gap-8 pb-10'>
+                    <div className='flex pt-10 gap-8 pb-10'>
                         <div className="flex flex-col">
                             <div className="lg:text-3xl text-amber-400 font-bold">20+</div>
                             <div className="lg:text-lg font-medium text-gray-400">Country</div>
