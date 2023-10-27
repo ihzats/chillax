@@ -17,7 +17,7 @@ function Header() {
 
     return (
         <div>
-            <nav className="container fixed w-full bg-primary p-4 z-10 shadow-md">
+            <nav className="fixed w-full bg-primary p-4 z-10 shadow-md">
                 <div className="mx-auto flex justify-between items-center">
                     <div className="text-white text-2xl font-bold font-chillax lg:mx-12">Chill<span className='text-amber-300'>Ax</span></div>
                     <div className="hidden md:flex space-x-8 mx-8 ">
