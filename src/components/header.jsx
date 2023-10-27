@@ -23,28 +23,28 @@ function Header() {
                     <div className="text-white text-2xl font-bold font-chillax lg:mx-12">Chill<span className='text-amber-300'>Ax</span></div>
                     <div className="hidden md:flex space-x-8 mx-8 ">
                         <Link
-                            href="/"
+                            to="/"
                             className={`text-white font-mono ${activeItem === 'Home' ? 'font-bold' : ''}`}
                             onClick={() => handleItemClick('Home')}
                         >
                             Home
                         </Link>
                         <Link
-                            href="/about"
+                            to="/about"
                             className={`text-white font-mono ${activeItem === 'About' ? 'font-bold' : ''}`}
                             onClick={() => handleItemClick('Home')}
                         >
                             About
                         </Link>
                         <Link
-                            href="/booking"
+                            to="/booking"
                             className={`text-white font-mono ${activeItem === 'Booking' ? 'font-bold' : ''}`}
                             onClick={() => handleItemClick('Home')}
                         >
                             Booking
                         </Link>
                         <Link
-                            href="#"
+                            to="#"
                             className={`text-white font-mono ${activeItem === 'Contact' ? 'font-bold' : ''}`}
                             onClick={() => handleItemClick('Home')}
                         >
@@ -59,10 +59,10 @@ function Header() {
                 </div>
                 <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
                     <ul className="text-white p-4 space-y-2">
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/about">About</Link></li>
-                        <li><Link href="/booking">Booking</Link></li>
-                        <li><Link href="#">Contact</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/booking">Booking</Link></li>
+                        <li><Link to="#">Contact</Link></li>
                     </ul>
                 </div>
             </nav>
