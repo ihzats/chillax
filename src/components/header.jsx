@@ -32,21 +32,21 @@ function Header() {
                         <Link
                             to="/about"
                             className={`text-white font-mono ${activeItem === 'About' ? 'font-bold' : ''}`}
-                            onClick={() => handleItemClick('Home')}
+                            onClick={() => handleItemClick('About')}
                         >
                             About
                         </Link>
                         <Link
                             to="/booking"
                             className={`text-white font-mono ${activeItem === 'Booking' ? 'font-bold' : ''}`}
-                            onClick={() => handleItemClick('Home')}
+                            onClick={() => handleItemClick('Booking')}
                         >
                             Booking
                         </Link>
                         <Link
-                            to="#"
+                            to="/contact"
                             className={`text-white font-mono ${activeItem === 'Contact' ? 'font-bold' : ''}`}
-                            onClick={() => handleItemClick('Home')}
+                            onClick={() => handleItemClick('Contact')}
                         >
                             Contact
                         </Link>
@@ -62,7 +62,7 @@ function Header() {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/booking">Booking</Link></li>
-                        <li><Link to="#">Contact</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
             </nav>
