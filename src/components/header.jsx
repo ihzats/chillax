@@ -32,21 +32,21 @@ function Header() {
                         <a
                             href="/about"
                             className={`text-white font-mono ${activeItem === 'About' ? 'font-bold' : ''}`}
-                            onClick={() => handleItemClick('About')}
+                            onClick={() => handleItemClick('Home')}
                         >
                             About
                         </a>
                         <a
                             href="/booking"
-                            className={`text-white font-mono ${activeItem === 'Services' ? 'font-bold' : ''}`}
-                            onClick={() => handleItemClick('Booking')}
+                            className={`text-white font-mono ${activeItem === 'Booking' ? 'font-bold' : ''}`}
+                            onClick={() => handleItemClick('Home')}
                         >
                             Booking
                         </a>
                         <a
                             href="#"
                             className={`text-white font-mono ${activeItem === 'Contact' ? 'font-bold' : ''}`}
-                            onClick={() => handleItemClick('Contact')}
+                            onClick={() => handleItemClick('Home')}
                         >
                             Contact
                         </a>
