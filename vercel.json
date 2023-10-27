@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/data.json",
-            "destination": "/path/to/your/json-file.json"
+            "destination": "hotel.json"
         }
     ]
 }
