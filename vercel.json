@@ -2,7 +2,7 @@
     "headers": [
         {
             "source": "/hotel.json",
-            "destination": "/file.json",
+            "destination": "/hotel.json",
             "headers": [
                 {
                     "key": "Access-Control-Allow-Origin",
