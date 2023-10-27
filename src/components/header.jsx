@@ -37,11 +37,11 @@ function Header() {
                             About
                         </a>
                         <a
-                            href="/service"
+                            href="/booking"
                             className={`text-white font-mono ${activeItem === 'Services' ? 'font-bold' : ''}`}
-                            onClick={() => handleItemClick('Services')}
+                            onClick={() => handleItemClick('Booking')}
                         >
-                            Services
+                            Booking
                         </a>
                         <a
                             href="#"
@@ -61,7 +61,7 @@ function Header() {
                     <ul className="text-white p-4 space-y-2">
                         <li><a href="/home">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/">Services</a></li>
+                        <li><a href="/">Booking</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
