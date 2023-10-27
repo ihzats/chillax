@@ -1,9 +1,13 @@
 {
-    "rewrites": [
-      {
-        "source": "hotel.json",
-        "destination": "hotel.json"
-      }
+    "headers": [
+        {
+            "source": "/hotel.json",
+            "headers": [
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                }
+            ]
+        }
     ]
-  }
-  
+}
