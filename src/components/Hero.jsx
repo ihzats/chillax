@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <>
             <div
-                className="h-screen bg-cover bg-center flex items-center"
+                className=" h-screen bg-cover bg-center flex items-center"
                 style={{
                     backgroundImage: 'url("/home.jpg")',
                 }}

@@ -31,21 +31,21 @@ const Testimonial = () => {
     };
 
     return (
-        <>
-            <h1 className='pt-20 text-center font-chillax font-bold text-4xl'>Testimonial</h1>
-            <div className="p-2 pb-20 max-w-4xl mx-auto">
+        <div className='container'>
+            <h1 className='pt-4 sm:pt-8 md:pt-12 lg:pt-20 text-center font-chillax font-bold text-4xl'>Testimonial</h1>
+            <div className="p-2 pb-8 sm:pb-12 md:pb-16 lg:pb-20 -w-4xl mx-auto">
                 <Slider {...settings}>
                     {testimonials.map((testimonial) => (
-                        <div key={testimonial.id}>
-                            <div className="bg-white rounded-lg p-6 text-center">
-                                <p className="text-lg text-gray-800 mb-4">{testimonial.text}</p>
-                                <p className="text-sm italic text-gray-600">{testimonial.author}</p>
+                        <div key={testimonial.id} className=''>
+                            <div className="bg-slate-100 rounded-lg p-6 text-center">
+                                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-800 mb-4">{testimonial.text}</p>
+                                <p className="text-xs sm:text-sm md:text-base lg:text-lg italic text-gray-600">{testimonial.author}</p>
                             </div>
                         </div>
                     ))}
                 </Slider>
             </div>
-        </>
+        </div>
     );
 };
 

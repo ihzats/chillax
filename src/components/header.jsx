@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BsList, BsX } from 'react-icons/bs';
-// import { Link } from 'react-router-dom';
+
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +16,8 @@ function Header() {
     };
 
     return (
-        <>
-
-            <nav className="fixed w-full bg-primary p-4 z-10 shadow-md">
+        <div>
+            <nav className="container fixed w-full bg-primary p-4 z-10 shadow-md">
                 <div className="mx-auto flex justify-between items-center">
                     <div className="text-white text-2xl font-bold font-chillax lg:mx-12">Chill<span className='text-amber-300'>Ax</span></div>
                     <div className="hidden md:flex space-x-8 mx-8 ">
@@ -59,14 +58,14 @@ function Header() {
                 </div>
                 <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
                     <ul className="text-white p-4 space-y-2">
-                        <li><a href="/home">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/">Booking</a></li>
+                        <li><a href="/booking">Booking</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-        </>
+        </div>
     );
 }
 
