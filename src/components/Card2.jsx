@@ -26,7 +26,7 @@ const Card2 = () => {
     hotel.HotelInfo.HotelName.toLowerCase().includes(searchTerm.toLowerCase())
   );
   const currentHotels = filteredHotels.slice(indexOfFirstHotel, indexOfLastHotel);
-  
+
   const paginate = (pageNumber) => {
     if (pageNumber < 1) {
       setCurrentPage(1);
@@ -76,7 +76,7 @@ const Card2 = () => {
           </div>
         ))}
       </div>
-      <div className="pt-10 px-72 flex justify-between items-center">
+      <div className="pt-10 px-8 md:px-24 lg:px-72 flex flex-row md:flex-row justify-center md:justify-between items-center">
         <button
           onClick={() => paginate(currentPage - 1)}
           disabled={currentPage === 1}
@@ -84,7 +84,7 @@ const Card2 = () => {
         >
           <FaArrowLeft />
         </button>
-        <span className="text-xl font-semibold">
+        <span className="text-xl font-semibold mt-4 md:mt-0 px-4">
           Page {currentPage} of {Math.ceil(filteredHotels.length / hotelsPerPage)}
         </span>
         <button
@@ -95,19 +95,20 @@ const Card2 = () => {
           <FaArrowRight />
         </button>
       </div>
-      <div className="mt-4 mb-20">
-        <ul className="flex justify-center text-md">
+      <div className="mt-4 mb-10">
+        <ul className="flex flex-wrap justify-center text-md">
           {Array.from({ length: maxPageNumbers }, (_, index) => (
             <li
               key={index}
               onClick={() => paginate(index + 1)}
-              className={`cursor-pointer mx-2 ${currentPage === index + 1 ? 'text-blue-500 font-semibold bg-slate-300 p-2 rounded-md' : 'text-gray-500 bg-slate-300 p-2 rounded-md'}`}
+              className={`cursor-pointer mx-2 mb-2 ${currentPage === index + 1 ? 'text-blue-500 font-semibold bg-slate-300 p-2 rounded-md' : 'text-gray-500 bg-slate-300 p-2 rounded-md'}`}
             >
               {index + 1}
             </li>
           ))}
         </ul>
       </div>
+
     </div>
   );
 };
