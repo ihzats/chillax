@@ -31,12 +31,15 @@ const Card2 = () => {
     if (pageNumber < 1) {
       setCurrentPage(1);
     } else if (pageNumber > Math.ceil(filteredHotels.length / hotelsPerPage)) {
-      setCurrentPage(Math.ceil(filteredHotels.length / hotelsPerPage));
+      setCurrentPage(Math.ceil(filteredHotels.length / hotelsPerPage) + 1);
     } else {
       setCurrentPage(pageNumber);
     }
   };
+
   const maxPageNumbers = Math.min(10, Math.ceil(filteredHotels.length / hotelsPerPage));
+
+
 
   return (
     <div className="container mx-auto pt-24">
@@ -96,19 +99,18 @@ const Card2 = () => {
         </button>
       </div>
       <div className="mt-4 mb-10">
-        <ul className="flex flex-wrap justify-center text-md">
+        {/* <ul className="flex flex-wrap justify-center text-md">
           {Array.from({ length: maxPageNumbers }, (_, index) => (
             <li
               key={index}
               onClick={() => paginate(index + 1)}
               className={`cursor-pointer mx-2 mb-2 ${currentPage === index + 1 ? 'text-blue-500 font-semibold bg-slate-300 p-2 rounded-md' : 'text-gray-500 bg-slate-300 p-2 rounded-md'}`}
             >
-              {index + 1}
+              {index + currentPage}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
-
     </div>
   );
 };

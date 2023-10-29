@@ -53,7 +53,7 @@ function Header() {
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleNavbar} className="text-white font-mono text-bold">
-                            {isOpen ? <BsX /> : <BsList />}
+                            {isOpen ? <BsX className='text-lg'/> : <BsList className='text-lg'/>}
                         </button>
                     </div>
                 </div>
