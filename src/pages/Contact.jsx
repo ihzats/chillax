@@ -32,7 +32,7 @@ export default function Contact() {
                         to="https://www.instagram.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-pink-600 hover:text-pink-800"
+                        className="text-red-600 hover:text-red-800"
                     >
                         <FaInstagram size={36} />
                     </Link>
